@@ -1,7 +1,7 @@
 const express = require('express')
 const bodyParser = require('body-parser');
 const JSONdb = require('simple-json-db');
-const db = new JSONdb('https://raw.githubusercontent.com/tapas1000/test/main/db.json',{asyncWrite:true,syncOnWrite:true});
+const db = new JSONdb('./db.json',{asyncWrite:true,syncOnWrite:true});
 const app = express()
 const port = 3900
 // parse body params and attache them to req.body
